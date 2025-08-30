@@ -119,7 +119,7 @@ function renderCalendar(date = new Date()) {
 function openModalForAdd(dateStr) {
     document.getElementById("formAction").value = "add";
     document.getElementById("eventId").value = "";
-    document.getElementById("deleteEvenId").value = "";
+    document.getElementById("deleteEventId").value = "";
     document.getElementById("courseName").value = "";
     document.getElementById("instructorName").value = "";
     document.getElementById("startDate").value = dateStr;
@@ -167,7 +167,7 @@ function openModalForEdit(eventsOnDate) {
 
 }
 
-// Populate form from selected event\
+// Populate form from selected event
 function handleEventSelection(eventJSON) {
     const event = JSON.parse(eventJSON);
 
